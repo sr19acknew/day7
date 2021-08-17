@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<head>
+  <style>
+    .giant-font {
+      font-size: 3em;
+    }
+    .hidden {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <h1>Smartphone Shop</h1>
+
+  <table>
+    <tr>
+      <td>
+        <img src="myPhone.jpg" />
+      </td>
+      <td>
+        <a
+          href="https://www.movertix.com/en/samsung-galaxy-a52-5g-dual-sim-awesome-violet-128gb-and-6gb-ram-sm-a526b-ds.html"
+        >
+          Sumsung Galaxy A52
+        </a>
+      </td>
+      <td>Just an anonymous smartphone</td>
+      <td>£399</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="myPhone.jpg" />
+      </td>
+      <td>
+        <a
+          href="https://www.movertix.com/en/samsung-galaxy-a52-5g-dual-sim-awesome-violet-128gb-and-6gb-ram-sm-a526b-ds.html"
+        >
+          Sumsung Galaxy A52
+        </a>
+      </td>
+      <td>Just an anonymous smartphone</td>
+      <td>£399</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="myPhone.jpg" />
+      </td>
+      <td>
+        <a
+          href="https://www.movertix.com/en/samsung-galaxy-a52-5g-dual-sim-awesome-violet-128gb-and-6gb-ram-sm-a526b-ds.html"
+        >
+          Sumsung Galaxy A52
+        </a>
+      </td>
+      <td>Just an anonymous smartphone</td>
+      <td>£399</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="myPhone.jpg" />
+      </td>
+      <td>
+        <a
+          href="https://www.movertix.com/en/samsung-galaxy-a52-5g-dual-sim-awesome-violet-128gb-and-6gb-ram-sm-a526b-ds.html"
+        >
+          Sumsung Galaxy A52
+        </a>
+      </td>
+      <td>Just an anonymous smartphone</td>
+      <td>£399</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="myPhone.jpg" />
+      </td>
+      <td>
+        <a
+          href="https://www.backmarket.it/iphone-8-256-go-grigio-siderale-sbloccato-da-tutti-gli-operatori-miglior-prezzo/36830.html?shopping=gmc&gclid=Cj0KCQjwi7yCBhDJARIsAMWFScMjZzOVcEF5pNGKC0iOZ6szYpA7VKH-Pqv4bKc8p2IdfJZnfR_Hg8IaAtV3EALw_wcB"
+        >
+          Sumsung Galaxy A52
+        </a>
+      </td>
+      <td>Just an anonymous smartphone</td>
+      <td>£399</td>
+    </tr>
+  </table>
+
+  <textarea></textarea>
+  <input type="text" />
+
+  <footer>
+    <div>Smartphone Shop</div>
+    <div> <address>Phase Two, Kingston Park
+        Flaxley Road
+        Peterborough, PE2 9EN
+        United Kingdom</address> </div>
+  </footer>
+
+  <script>
+    function changeH1Text() {
+      document.querySelector("h1").innerHTML = "Changed!";
+    }
+
+    function changeBackgroundColor() {
+      document.querySelector("body").style.backgroundColor = "green";
+    }
+
+    function changeFakeAddress() {
+      document.querySelector("footer > div:nth-child(2)").innerHTML =
+        "FAKE ADDRESS ðŸ¤«";
+      // document.querySelector('#address').innerHTML = "FAKE ADDRESS ðŸ¤«"
+    }
+
+    function addClassToLinks() {
+      for (let node of document.querySelectorAll("a")) {
+        node.classList.add("giant-font");
+      }
+    }
+
+    function toggleImagesClass() {
+      for (let image of document.querySelectorAll("img")) {
+        image.classList.toggle("hidden"); // if the class is already set, remove it. otherwise, add it
+      }
+    }
+
+    function setRandomColor() {
+      const color = getRandomColor();
+
+      for (let price of document.querySelectorAll("tr > td:nth-child(4)")) {
+        price.style.color = color;
+      }
+    }
+
+    function getRandomColor() {
+      const red = Math.round(Math.random() * 255);
+      const green = Math.round(Math.random() * 255);
+      const blue = Math.round(Math.random() * 255);
+
+      return "rgb(" + red + ", " + green + ", " + blue + ")";
+    }
+  </script>
+</body>
